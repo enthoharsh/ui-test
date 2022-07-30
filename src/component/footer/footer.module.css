@@ -1,0 +1,30 @@
+.footParent{
+    background: black;
+    color: white;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.footlinks ul li{
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+.footinput{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footinput h4{
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.footinput input{
+    padding: 0.3rem;
+    border-radius: 5px;
+}

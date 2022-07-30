@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 10vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+  background-color: black;
+  color: white;
+}
+
+.navName {
+  width: 7%;
+  color: #474747;
+  font-weight: 600;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.navName span {
+  color: #e1523e;
+}
+
+.navLinks {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navLinks a {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  color: #e1523e !important;
+  border-bottom: 3px solid #e1523e;
+}
+
+.navSoc {
+  display: flex;
+  justify-content: space-around;
+  width: 23%;
+}
+
+.navSoc svg{
+    border-radius: 50%;
+    padding: 5px;
+    background: white;
+}
+
+.navSoc svg:hover{
+  position: relative;
+  bottom: 2px;
+
+}
+
+
+.toggle {
+  display: none;
+}
+
+.nav_right_links{
+  display: block;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+}
+
+.nav_right_links a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.nav_right_links:hover{
+  background-color: white;
+}
+
+.nav_right_links:hover a{
+  color: black;
+}
+
+.langDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.langDiv img{
+  width: 15px;
+  margin-right: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navBox {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    background: rgb(0, 0, 0);
+    z-index: 3;
+    top: 0;
+  }
+
+  .navLinks {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: none;
+  }
+
+  .navLinks a {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .navSoc {
+    width: 100%;
+    display: none;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+  }
+
+  .toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 280px){
+  .navName{
+    font-size: 1.8rem;
+  }
+}

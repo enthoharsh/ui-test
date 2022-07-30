@@ -1,0 +1,95 @@
+.signinParent {
+  display: flex;
+  height: 438px;
+}
+
+.signinimage {
+  width: 60%;
+  overflow: hidden;
+}
+
+.signinimage img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.signindetail {
+  width: 40%;
+  padding: 3rem;
+  padding-bottom: 0;
+  padding-top: 1.9rem;
+}
+
+.signindetail h2 {
+  margin-bottom: 0.5rem;
+}
+.inpDiv,
+.passDiv,
+.btnDiv,
+.chkBox,
+.alreadyreg,
+.btnDiv {
+  padding: 0.8rem 0;
+  width: 270px;
+}
+
+.inpDiv input {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.passDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.passDiv input {
+  width: 45%;
+  padding: 0.4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.btnDiv button {
+  background: #044b82;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 754px) {
+  .signinParent {
+    flex-direction: column;
+    margin-top: 4.8rem;
+    height: 850px;
+  }
+  .signinimage,
+  .signindetail {
+    width: 100%;
+  }
+
+  .signindetail {
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .inpDiv {
+    width: 100%;
+  }
+  .passDiv input,
+  .btnDiv input,
+  .chkBox input,
+  .alreadyreg input,
+  .btnDiv input{
+    width: 100%;
+  }
+}
